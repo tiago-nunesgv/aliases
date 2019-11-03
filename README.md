@@ -1,1 +1,1 @@
-# alias
+Para navegar de forma confortavel pelos diretorios utiliza-se alis.
