@@ -10,9 +10,12 @@ Você pode economizar algum tempo criando aliases para os comandos mais usados. 
 
 * Neste exemplo criamos um apelido para o comando de cd ~/Documentos, sempre que quisermos acessar a pasta Ducumentos é so digitar docs .
 
+```
+$ alias docs="cd ~/Documentos"
+```
 |comando|resultado|
 |-------|----------|
-|alias docs="cd ~/Documentos"|docs|
+|docs|Documentos|
 
 
 
