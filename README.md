@@ -9,3 +9,5 @@
 |alias docs="cd ~/Documentos"|docs|
 
 * Neste exemplo criamos um apelido para o comando de cd ~/Documentos, sempre que quisermos acessar a pasta Ducumentos é so digitar docs .
+
+> sempre qui tiver que fazer o mesmo comando por varias veses é bom criar aliases.
