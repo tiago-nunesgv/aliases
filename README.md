@@ -16,4 +16,11 @@ Você pode economizar algum tempo criando aliases para os comandos mais usados. 
 * Neste exemplo criamos um apelido para o comando de cd ~/Documentos, sempre que quisermos acessar a pasta Ducumentos é so digitar docs .
 
 > sempre qui tiver que fazer o mesmo comando por varias veses é bom criar aliases.
+
+* caso queira remover um ou todos os aliases execute os comandos abaixo:
+```
+$ unalias alias_name [remove um alias]
+
+$ unalias -a  [remove todos os alias]
+
 -----
