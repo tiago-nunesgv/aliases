@@ -1,8 +1,6 @@
-Para navegar de forma confortavel pelos diretorios utiliza-se alis.
+### Para navegar de forma confortavel pelos diretorios os usuários do Linux geralmente precisam usar um comando repetidamente. Digitar ou copiar o mesmo comando repetidamente reduz sua produtividade e o distrai do que você está realmente fazendo.
 
-Os usuários do Linux geralmente precisam usar um comando repetidamente. Digitar ou copiar o mesmo comando repetidamente reduz sua produtividade e o distrai do que você está realmente fazendo.
-
-Você pode economizar algum tempo criando aliases para os comandos mais usados. Os aliases são como atalhos personalizados usados para representar um comando (ou conjunto de comandos) executado com ou sem opções personalizadas. Provavelmente, você já está usando aliases no seu sistema Linux.
+#### Você pode economizar algum tempo criando aliases para os comandos mais usados. Os aliases são como atalhos personalizados usados para representar um comando (ou conjunto de comandos) executado com ou sem opções personalizadas. Provavelmente, você já está usando aliases no seu sistema Linux.
 
 * Exemplo:
 
