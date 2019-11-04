@@ -22,5 +22,3 @@ Você pode economizar algum tempo criando aliases para os comandos mais usados. 
 $ unalias alias_name [remove um alias]
 
 $ unalias -a  [remove todos os alias]
-
------
