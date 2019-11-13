@@ -37,7 +37,9 @@ $ alias ~="cd ~" # `cd` is probably faster to type though
 $ alias -- -="cd -"
 alias cat=ccat
 ```
+
 # Atalhos
+
 ```
 $ alias docs="cd ~/Documentos"
 
@@ -125,6 +127,7 @@ $ alias apt-get='sudo apt-get'
 ```
 
 # DOCKER ALIAS
+
 ```
 $ alias docker='docker'
 
@@ -156,6 +159,7 @@ $ alias la='ls -la --color'
 
 
 ## Listar apenas diretórios
+
 ```
 $ alias lsd='ls -l --color | grep "^d"'
 ```
@@ -173,18 +177,21 @@ $ alias ips="sudo ifconfig -a | grep -o 'inet6\? \(\([0-9]\+\.[0-9]\+\.[0-9]\+\.
 
 
 # Pesquisas WHOIS aprimoradas
+
 ```
 $ alias whois="whois -h whois-servers.net"
 ```
 
 
 # Liberar cache do serviço de diretório
+
 ```
 $ alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
 ```
 
 
 # View HTTP traffic
+
 ```
 $ alias sniff="sudo grep -d 'wlan0' -t '^(GET|POST) ' 'tcp and port 80'"
 
@@ -254,13 +261,8 @@ $ alias nmap_full_with_scripts = " sudo nmap -sS -sU -T4 -A -v -PE -PP -PS21,22,
 script all " 
 
 $ alias nmap_web_safe_osscan = " sudo nmap -p 80.443 -O -v --osscan-guess --fuzzy "
-
-$ unalias ls
-
-$ alias ls='ls -l --color'
-
-$ alias ark='file-roller
 ```
+
 
 
 * Caso queira remover um ou todos os aliases execute os comandos abaixo:
@@ -272,3 +274,21 @@ $ unalias alias_name [remove um alias]
 
 
 $ unalias -a  [remove todos os alias]
+
+```
+
+#### Desintalar aliases
+
+```
+$ unalias ls
+
+$ alias ls='ls -l --color'
+
+$ alias ark='file-roller
+```
+$ unalias ls
+
+$ alias ls='ls -l --color'
+
+$ alias ark='file-roller
+```
