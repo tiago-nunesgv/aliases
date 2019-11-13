@@ -286,6 +286,8 @@ $ alias ls='ls -l --color'
 
 $ alias ark='file-roller
 ```
+
+```
 $ unalias ls
 
 $ alias ls='ls -l --color'
