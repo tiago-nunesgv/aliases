@@ -23,164 +23,170 @@ $ alias docs="cd ~/Documentos"
 
 
 # Navegação mais fácil
+```
+$ alias ..="cd .."
 
-alias ..="cd .."
-alias ...="cd ../.."
-alias ....="cd ../../.."
-alias .....="cd ../../../.."
-alias ~="cd ~" # `cd` is probably faster to type though
-alias -- -="cd -"
+$ alias ...="cd ../.."
 
+$ alias ....="cd ../../.."
+
+$ alias .....="cd ../../../.."
+
+$ alias ~="cd ~" # `cd` is probably faster to type though
+
+$ alias -- -="cd -"
 alias cat=ccat
+```
 # Atalhos
-alias docs="cd ~/Documentos"
 
-alias dl="cd ~/Downloads"
+$ alias docs="cd ~/Documentos"
 
-alias dt="cd ~/Desktop"
+$ alias dl="cd ~/Downloads"
 
-alias sb="cd ~/sandbox"
+$ alias dt="cd ~/Desktop"
 
-alias g="git"
+$ alias sb="cd ~/sandbox"
 
-alias h="history"
+$ alias g="git"
 
-alias dir='ls'
+$ alias h="history"
 
-alias python='python3'
+$ alias dir='ls'
 
-alias @gv='gvim'
+$ alias python='python3'
 
-alias @v='vim'
+$ alias @gv='gvim'
 
-alias @p='python3'
+$ alias @v='vim'
 
-alias @ip='ipython'
+$ alias @p='python3'
 
-alias @da='django-admin.py'
+$ alias @ip='ipython'
 
-alias @pm='python manage.py'
+$ alias @da='django-admin.py'
 
-alias @wo='workon'
+$ alias @pm='python manage.py'
 
-alias @de='deactivate'
+$ alias @wo='workon'
 
-alias @ct='tdaemon --custom-args="--verbosity=2 --rednose --force-color"'
+$ alias @de='deactivate'
 
-alias @ctd='tdaemon --test-program=django --custom-args="--verbosity=2 --rednose --force-color"'
+$ alias @ct='tdaemon --custom-args="--verbosity=2 --rednose --force-color"'
 
-alias open='nautilus'
+$ alias @ctd='tdaemon --test-program=django --custom-args="--verbosity=2 --rednose --force-color"'
 
-alias r='rails'
+$ alias open='nautilus'
 
-alias gi='gem install'
+$ alias r='rails'
 
-alias ack='ack-grep'
+$ alias gi='gem install'
 
-alias gst='git status'
+$ alias ack='ack-grep'
 
-alias gch='git checkout'
+$ alias gst='git status'
 
-alias gb='git branch'
+$ alias gch='git checkout'
 
-alias gco='git commit'
+$ alias gb='git branch'
 
-alias gdf='git diff'
+$ alias gco='git commit'
 
-alias ls='ls -liash --color=auto'
+$ alias gdf='git diff'
 
-alias vbox='vagrant box'
+$ alias ls='ls -liash --color=auto'
 
-alias vinit='vagrant init'
+$ alias vbox='vagrant box'
 
-alias vup='vagrant up'
+$ alias vinit='vagrant init'
 
-alias vssh='vagrant ssh'
+$ alias vup='vagrant up'
 
-alias vreload='vagrant reload'
+$ alias vssh='vagrant ssh'
 
-alias vhalt='vagrant halt'
+$ alias vreload='vagrant reload'
 
-alias vsuspend='vagrant suspend'
+$ alias vhalt='vagrant halt'
 
-alias vresume='vagrant resume'
+$ alias vsuspend='vagrant suspend'
 
-alias vdestroy='vagrant destroy'
+$ alias vresume='vagrant resume'
 
-alias vprovision='vagrant provision'
+$ alias vdestroy='vagrant destroy'
 
-alias vstatus='vagrant status'
+$ alias vprovision='vagrant provision'
 
-alias weechat='weechat-curses irc://irc.freenode.net'
+$ alias vstatus='vagrant status'
 
-alias rspec='rspec --color'
+$ alias weechat='weechat-curses irc://irc.freenode.net'
 
-alias apt-get='sudo apt-get'
+$ alias rspec='rspec --color'
+
+$ alias apt-get='sudo apt-get'
 
 
 # DOCKER ALIAS
 
-alias docker='docker'
+$ alias docker='docker'
 
-alias dockr='docker run'
+$ alias dockr='docker run'
 
-alias dockps='docker ps'
+$ alias dockps='docker ps'
 
-alias dockrm='docker rm'
+$ alias dockrm='docker rm'
 
-alias docki='docker images'
+$ alias docki='docker images'
 
-alias dockrmi='docker rmi'
+$ alias dockrmi='docker rmi'
 
 
 # Liste todos os arquivos coloridos em formato longo
 
-alias l='ls -l --color'
+$ alias l='ls -l --color'
 
-alias lisah='ls -lisah --color'
+$ alias lisah='ls -lisah --color'
 
 
 
 # lista todos os arquivos coloridos em formato longo, incluindo arquivos de ponto
 
-alias la='ls -la --color'
+$ alias la='ls -la --color'
 
 
 
 ## Listar apenas diretórios
 
-alias lsd='ls -l --color | grep "^d"'
+$ alias lsd='ls -l --color | grep "^d"'
 
 
 
 # Endereços IP
 
-alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+$ alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 
-#alias localip="sudo ifconfig getifaddr wlan0"
+$ alias localip="sudo ifconfig getifaddr wlan0"
 
-#alias ips="sudo ifconfig -a | grep -o 'inet6\? \(\([0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+\)\|[a-fA-F0-9:]\+\)' | sed -e 
+$ alias ips="sudo ifconfig -a | grep -o 'inet6\? \(\([0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+\)\|[a-fA-F0-9:]\+\)' | sed -e 
 's/inet6* //'"
 
 
 
 # Pesquisas WHOIS aprimoradas
 
-alias whois="whois -h whois-servers.net"
+$ alias whois="whois -h whois-servers.net"
 
 
 
 # Liberar cache do serviço de diretório
 
-alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
+$ alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
 
 
 
 # View HTTP traffic
 
-alias sniff="sudo grep -d 'wlan0' -t '^(GET|POST) ' 'tcp and port 80'"
+$ alias sniff="sudo grep -d 'wlan0' -t '^(GET|POST) ' 'tcp and port 80'"
 
-alias httpdump="sudo tcpdump -i wlan0 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET \/.*\""
+$ alias httpdump="sudo tcpdump -i wlan0 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET \/.*\""
 
 
 
@@ -217,43 +223,42 @@ insanas (5)
 
 --script = vuln - também acessa vulnerabilidades no destino
 
+```
+$ alias nmap_open_ports = " nmap --open "
 
-alias nmap_open_ports = " nmap --open "
+$ alias nmap_list_interfaces = " nmap --iflist "
 
-alias nmap_list_interfaces = " nmap --iflist "
+$ alias nmap_slow = " sudo nmap -sS -v -T1 "
 
-alias nmap_slow = " sudo nmap -sS -v -T1 "
+$ alias nmap_fin = " sudo nmap -sF -v "
 
-alias nmap_fin = " sudo nmap -sF -v "
+$ alias nmap_full = " sudo nmap -sS -T4 -PE -PP -PS80.443 -PY -g 53 -A -p1-65535 -v "
 
-alias nmap_full = " sudo nmap -sS -T4 -PE -PP -PS80.443 -PY -g 53 -A -p1-65535 -v "
+$ alias nmap_check_for_firewall = " sudo nmap -sA -p1-65535 -v -T4 "
 
-alias nmap_check_for_firewall = " sudo nmap -sA -p1-65535 -v -T4 "
+$ alias nmap_ping_through_firewall = " nmap -PS -PA "
 
-alias nmap_ping_through_firewall = " nmap -PS -PA "
+$ alias nmap_fast = " nmap -F -T5 --version-light --top-ports 300 "
 
-alias nmap_fast = " nmap -F -T5 --version-light --top-ports 300 "
+$ alias nmap_detect_versions = " sudo nmap -sV -p1-65535 -O --osscan-guess -T4 -Pn "
 
-alias nmap_detect_versions = " sudo nmap -sV -p1-65535 -O --osscan-guess -T4 -Pn "
+$ alias nmap_check_for_vulns = " nmap --script = vuln "
 
-alias nmap_check_for_vulns = " nmap --script = vuln "
+$ alias nmap_full_udp = " sudo nmap -sS -sU -T4 -A -v -PE -PS22,25,80 -PA21,23,80,443,3389 "
 
-alias nmap_full_udp = " sudo nmap -sS -sU -T4 -A -v -PE -PS22,25,80 -PA21,23,80,443,3389 "
+$ alias nmap_traceroute = " sudo nmap -sP -PE -PS22,25,80 -PA21,23,80,3389 -PU -PO --traceroute "
 
-alias nmap_traceroute = " sudo nmap -sP -PE -PS22,25,80 -PA21,23,80,3389 -PU -PO --traceroute "
-
-alias nmap_full_with_scripts = " sudo nmap -sS -sU -T4 -A -v -PE -PP -PS21,22,23,25,80,113.31339 -PA80.113.443.10042 -PO --
+$ alias nmap_full_with_scripts = " sudo nmap -sS -sU -T4 -A -v -PE -PP -PS21,22,23,25,80,113.31339 -PA80.113.443.10042 -PO --
 script all " 
 
-alias nmap_web_safe_osscan = " sudo nmap -p 80.443 -O -v --osscan-guess --fuzzy "
+$ alias nmap_web_safe_osscan = " sudo nmap -p 80.443 -O -v --osscan-guess --fuzzy "
 
+$ unalias ls
 
-unalias ls
+$ alias ls='ls -l --color'
 
-alias ls='ls -l --color'
-
-alias ark='file-roller
-
+$ alias ark='file-roller
+```
 
 
 * Caso queira remover um ou todos os aliases execute os comandos abaixo:
