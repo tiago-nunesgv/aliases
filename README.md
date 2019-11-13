@@ -38,7 +38,7 @@ $ alias -- -="cd -"
 alias cat=ccat
 ```
 # Atalhos
-
+```
 $ alias docs="cd ~/Documentos"
 
 $ alias dl="cd ~/Downloads"
@@ -122,10 +122,10 @@ $ alias weechat='weechat-curses irc://irc.freenode.net'
 $ alias rspec='rspec --color'
 
 $ alias apt-get='sudo apt-get'
-
+```
 
 # DOCKER ALIAS
-
+```
 $ alias docker='docker'
 
 $ alias dockr='docker run'
@@ -146,48 +146,50 @@ $ alias l='ls -l --color'
 $ alias lisah='ls -lisah --color'
 
 
+```
 
 # lista todos os arquivos coloridos em formato longo, incluindo arquivos de ponto
 
+```
 $ alias la='ls -la --color'
-
+```
 
 
 ## Listar apenas diretórios
-
+```
 $ alias lsd='ls -l --color | grep "^d"'
-
+```
 
 
 # Endereços IP
-
+```
 $ alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 
 $ alias localip="sudo ifconfig getifaddr wlan0"
 
 $ alias ips="sudo ifconfig -a | grep -o 'inet6\? \(\([0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+\)\|[a-fA-F0-9:]\+\)' | sed -e 
 's/inet6* //'"
-
+```
 
 
 # Pesquisas WHOIS aprimoradas
-
+```
 $ alias whois="whois -h whois-servers.net"
-
+```
 
 
 # Liberar cache do serviço de diretório
-
+```
 $ alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
-
+```
 
 
 # View HTTP traffic
-
+```
 $ alias sniff="sudo grep -d 'wlan0' -t '^(GET|POST) ' 'tcp and port 80'"
 
 $ alias httpdump="sudo tcpdump -i wlan0 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET \/.*\""
-
+```
 
 
 # Alguns aliases úteis do nmap para modos de verificação
