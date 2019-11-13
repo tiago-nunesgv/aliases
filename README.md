@@ -118,7 +118,7 @@ alias rspec='rspec --color'
 alias apt-get='sudo apt-get'
 
 
-#DOCKER ALIAS
+# DOCKER ALIAS
 
 alias docker='docker'
 
