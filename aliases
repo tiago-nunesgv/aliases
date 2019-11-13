@@ -1,4 +1,5 @@
-#Navegação mais fácil
+# Navegação mais fácil
+
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
