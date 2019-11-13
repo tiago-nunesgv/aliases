@@ -1,6 +1,10 @@
 <h1 align="center">
-Para navegar de forma confortavel pelos diretorios 
+Navegue de forma confortavel pelos diretorios 
 </h1>
+
+---------------------------
+
+<h1 align="center">Breve instrodução</h1>
 
 Os usuários do Linux geralmente precisam usar um comando repetidamente. Digitar ou copiar o mesmo comando repetidamente reduz sua produtividade e o distrai do que você está realmente fazendo.
 
@@ -10,9 +14,13 @@ Você pode economizar algum tempo criando aliases para os comandos mais usados. 
 
 * Neste exemplo criamos um apelido para o comando de cd ~/Documentos, sempre que quisermos acessar a pasta Ducumentos é so digitar docs .
 
+
 ```
 $ alias docs="cd ~/Documentos"
 ```
+
+------------------------------
+
 
 # Navegação mais fácil
 
