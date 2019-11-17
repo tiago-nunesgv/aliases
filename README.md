@@ -11,7 +11,7 @@ Os usuários do Linux geralmente precisam usar um comando repetidamente. Digitar
 Você pode economizar algum tempo criando aliases para os comandos mais usados. Os aliases são como atalhos personalizados usados para representar um comando (ou conjunto de comandos) executado com ou sem opções personalizadas. Provavelmente, você já está usando aliases no seu sistema Linux.
 
 * sempre que tiver que fazer o mesmo comando por varias veses é bom criar aliases.
-* para mais informações acesse o (site)[https://tiagotgv.github.io/aliases/]
+* para mais informações acesse o [site](https://tiagotgv.github.io/aliases/]
 
 ```
 $ alias docs="cd ~/Documentos"
