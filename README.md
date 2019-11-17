@@ -126,7 +126,7 @@ $ alias rspec='rspec --color'
 $ alias apt-get='sudo apt-get'
 ```
 
-# DOCKER ALIAS
+# Aliases de comando DOCKER  
 
 ```
 $ alias docker='docker'
@@ -200,7 +200,6 @@ $ alias httpdump="sudo tcpdump -i wlan0 -n -s 0 -w - | grep -a -o -E \"Host\: .*
 
 
 # Alguns aliases úteis do nmap para modos de verificação
-
 
 
 # As opções do Nmap são:
