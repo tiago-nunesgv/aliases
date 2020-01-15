@@ -173,7 +173,7 @@ As opções do Nmap são:
    -sA - Varredura de confirmação de TCP
    -F - verificação rápida
    --script = vuln - também acessa vulnerabilidades no destino
-```
+
 alias nmap_open_ports = " nmap --open "
 alias nmap_list_interfaces = " nmap --iflist "
 alias nmap_slow = " sudo nmap -sS -v -T1 "
