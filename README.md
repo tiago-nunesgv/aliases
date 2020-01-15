@@ -64,16 +64,18 @@ alias rspec='rspec --color'
 alias apt-get='sudo apt-get'
 ```
 # DOCKER ALIAS
+```
 alias docker='docker'
 alias dockr='docker run'
 alias dockps='docker ps'
 alias dockrm='docker rm'
 alias docki='docker images'
 alias dockrmi='docker rmi'
-
+```
 ___________________________________________________
 
 # GIT
+```
 alias gb='git branch'
 alias gl='git log'
 alias gc='git commit -v'
@@ -90,8 +92,9 @@ alias gsl='git stash list'
 alias grc='git rebase --continue'
 alias gri='git rebase --interactive'
 alias gpuh='git push heroku master'
-
+```
 # DATABASES
+```
 alias mstart='launchctl load -w ~/Library/LaunchAgents/org.mongodb.mongod.plist'
 alias mstop='launchctl unload -w ~/Library/LaunchAgents/org.mongodb.mongod.plist'
 alias mystart='/usr/local/Cellar/mysql/5.1.45/share/mysql/mysql.server start'
@@ -102,8 +105,9 @@ alias redstart='launchctl load -w ~/Library/LaunchAgents/io.redis.redis-server.p
 alias redstop='launchctl unload -w ~/Library/LaunchAgents/io.redis.redis-server.plist'
 alias pgstart='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
 alias pgstop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
-
+```
 # RUBY
+```
 alias ge='gem open' # gem install gem-browse
 alias irb='irb --readline -r irb/completion'
 alias i='irb -rubygems'
@@ -116,53 +120,60 @@ alias rt='rake -T'
 alias restart='touch tmp/restart.txt'
 alias migrate='rake db:migrate db:test:prepare'
 alias remigrate='rake db:drop db:create db:migrate'
-
+```
 __________________________________________________
 
 # Liste todos os arquivos coloridos em formato longo
+```
 alias l='ls -l --color'
 alias lisah='ls -lisah --color'
-
+```
 # lista todos os arquivos coloridos em formato longo, incluindo arquivos de ponto
+```
 alias la='ls -la --color'
-
+```
 ## Listar apenas diretórios
+```
 alias lsd='ls -l --color | grep "^d"'
-
+```
 # Endereços IP
+```
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 #alias localip="sudo ifconfig getifaddr wlan0"
 #alias ips="sudo ifconfig -a | grep -o 'inet6\? \(\([0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+\)\|[a-fA-F0-9:]\+\)' | sed -e 's/inet6* //'"
- 
+ ```
 # Pesquisas WHOIS aprimoradas
+```
 alias whois="whois -h whois-servers.net"
- 
+ ```
 
 # Liberar cache do serviço de diretório
+```
 alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
- 
+ ```
 # View HTTP traffic
+```
 alias sniff="sudo grep -d 'wlan0' -t '^(GET|POST) ' 'tcp and port 80'"
 alias httpdump="sudo tcpdump -i wlan0 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET \/.*\""
+```
+## Alguns aliases úteis do nmap para modos de verificação
 
-
-# Alguns aliases úteis do nmap para modos de verificação
-
-# As opções do Nmap são:
-#   -sS - Varredura TCP SYN
-#   -v - detalhado
-#   -T1 - tempo da verificação. As opções são paranóicas (0), sorrateiras (1), educadas (2), normais (3), agressivas (4) e insanas (5)
-#   -sF - Varredura FIN (pode se infiltrar através de firewalls não controláveis)
-#   -PE - Sonda de descoberta de eco ICMP
-#   -PP - probe descoberta de carimbo de data e hora
-#   -PY - Ping inicial do SCTP
-#   -g - usa o número fornecido como porta de origem
-#   -A - ativa a detecção do SO, detecção de versão, varredura de script e traceroute (agressivo)
-#   -O - ativar a detecção do SO
-#   -sA - Varredura de confirmação de TCP
-#   -F - verificação rápida
-#   --script = vuln - também acessa vulnerabilidades no destino
-
+As opções do Nmap são:
+```
+   -sS - Varredura TCP SYN
+   -v - detalhado
+   -T1 - tempo da verificação. As opções são paranóicas (0), sorrateiras (1), educadas (2), normais (3), agressivas (4) e insanas (5)
+   -sF - Varredura FIN (pode se infiltrar através de firewalls não controláveis)
+   -PE - Sonda de descoberta de eco ICMP
+   -PP - probe descoberta de carimbo de data e hora
+   -PY - Ping inicial do SCTP
+   -g - usa o número fornecido como porta de origem
+   -A - ativa a detecção do SO, detecção de versão, varredura de script e traceroute (agressivo)
+   -O - ativar a detecção do SO
+   -sA - Varredura de confirmação de TCP
+   -F - verificação rápida
+   --script = vuln - também acessa vulnerabilidades no destino
+```
 alias nmap_open_ports = " nmap --open "
 alias nmap_list_interfaces = " nmap --iflist "
 alias nmap_slow = " sudo nmap -sS -v -T1 "
@@ -177,9 +188,9 @@ alias nmap_full_udp = " sudo nmap -sS -sU -T4 -A -v -PE -PS22,25,80 -PA21,23,80,
 alias nmap_traceroute = " sudo nmap -sP -PE -PS22,25,80 -PA21,23,80,3389 -PU -PO --traceroute "
 alias nmap_full_with_scripts = " sudo nmap -sS -sU -T4 -A -v -PE -PP -PS21,22,23,25,80,113.31339 -PA80.113.443.10042 -PO --script all " 
 alias nmap_web_safe_osscan = " sudo nmap -p 80.443 -O -v --osscan-guess --fuzzy "
-
-
+```
+```
 unalias ls
 alias ls='ls -l --color'
 alias ark='file-roller
-
+```
