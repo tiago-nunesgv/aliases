@@ -18,7 +18,6 @@ alias tf='tail -f -n 100'
 alias httpdump='sudo tcpdump -i en0 -n -s 0 -w - | grep -a -o -E "Host\: .*|GET \/.*"'
 alias rmds='find . -name ".DS_Store" -type f -delete'
 
-
 # Atalhos
 alias docs="cd ~/Documentos"
 alias dl="cd ~/Downloads"
