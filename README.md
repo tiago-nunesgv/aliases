@@ -1,5 +1,5 @@
 # Navegação mais fácil
-
+```
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
@@ -7,9 +7,9 @@ alias .....="cd ../../../.."
 alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 alias cat=ccat
-
+```
 # Geral
-
+```
 alias l='ls -lah'
 alias c='clear'
 alias o='open .'
@@ -17,8 +17,9 @@ alias e='subl . -n'
 alias tf='tail -f -n 100'
 alias httpdump='sudo tcpdump -i en0 -n -s 0 -w - | grep -a -o -E "Host\: .*|GET \/.*"'
 alias rmds='find . -name ".DS_Store" -type f -delete'
-
+```
 # Atalhos
+```
 alias docs="cd ~/Documentos"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
@@ -61,7 +62,7 @@ alias vstatus='vagrant status'
 alias weechat='weechat-curses irc://irc.freenode.net'
 alias rspec='rspec --color'
 alias apt-get='sudo apt-get'
-
+```
 # DOCKER ALIAS
 alias docker='docker'
 alias dockr='docker run'
