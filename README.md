@@ -71,7 +71,7 @@ alias dockps='docker ps'
 alias dockrm='docker rm'
 alias docki='docker images'
 alias dockrmi='docker rmi'
-```
+``` 
 ___________________________________________________
 
 # GIT
